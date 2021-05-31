@@ -1,0 +1,372 @@
+/*****************************
+    Layout
+*****************************/
+body {
+  font-family: $font-base;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  color: $body-color;
+  overflow-x: hidden;
+}
+
+a {
+  outline: medium none !important;
+  color: $primary;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none !important;
+
+  &:focus {
+    color: $primary;
+    text-decoration: none !important;
+  }
+
+  &:hover {
+    color: $primary;
+    text-decoration: none !important;
+  }
+
+}
+
+input {
+  outline: medium none !important;
+  color: $primary;
+}
+
+hr {
+  border-top-color: $border-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-hedding;
+  font-weight: normal;
+  color: $primary;
+  margin-top: 0px;
+  text-transform: capitalize;
+
+  a {
+    color: inherit;
+  }
+
+}
+
+label {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 500;
+  
+}
+
+h2 {
+  font-size: 56px;
+  font-weight: 500;
+  ;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 500;
+  
+}
+
+h4 {
+  font-size: 30px;
+  font-weight: 500;
+  
+}
+
+h5 {
+  font-size: 24px;
+  font-weight: 500;
+  
+}
+
+h6 {
+  font-size: 20px;
+  font-weight: 500;
+  
+}
+
+p {
+  font-weight: normal;
+  line-height: 26px;
+}
+
+*::-moz-selection {
+  background: $primary;
+  color: $white;
+  text-shadow: none;
+}
+
+::-moz-selection {
+  background: $primary;
+  color: $white;
+  text-shadow: none;
+}
+
+::selection {
+  background: $primary;
+  color: $white;
+  text-shadow: none;
+}
+
+@media (min-width:1200px) {
+  .container {
+    max-width: 1200px;
+  }
+
+}
+
+/* container-fluid */
+.container-fluid.container-space {
+  padding: 0 100px;
+}
+
+
+
+
+/* lead */
+.lead {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+iframe {
+  width: 100%;
+}
+
+
+/*****************************
+    Helper Classes
+*****************************/
+// color
+.text-primary {
+  color: $primary !important;
+}
+
+.text-secondary {
+  color: $secondary !important;
+}
+
+.text-white {
+  color: $white;
+}
+
+.text-dark {
+  color: $black !important;
+}
+
+
+.shadow {
+  box-shadow: 0 1.0rem 2rem rgba(0, 0, 0, .05) !important;
+}
+
+
+// background
+.bg-primary {
+  background: $primary !important;
+}
+
+.bg-light {
+  background: $gray-1 !important;
+}
+
+
+
+// Page section margin padding
+.space-ptb {
+  padding: 90px 0;
+}
+
+.space-pt {
+  padding: 90px 0 0;
+}
+
+.space-lg-pt {
+  padding: 100px 0 0;
+}
+
+.space-pb {
+  padding: 0 0 90px;
+}
+
+
+
+/* Sticky column */
+.is-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100px;
+}
+
+hr {
+  border-top-color: rgba($white, 0.1);
+}
+
+hr.hr-dark {
+  border-top-color: rgba($black, 0.1);
+}
+
+
+
+
+
+/* section title */
+.section-title {
+  margin-bottom: 50px;
+
+  .title {
+    margin-bottom: 20px;
+  }
+
+  .sub-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    display: inline-block;
+    position: relative;
+  }
+
+  .pre-title {
+    font-size: 16px;
+  }
+
+}
+
+
+.newsletter-btn{
+  display: inline-block;
+  text-align: center;
+  background-color: $secondary;
+  color: $white;
+  font-size: 30px;
+  font-weight: 400;
+  border-radius: $border-radius-md;
+  padding: 18px 50px;
+  span{
+    display: block;
+    font-size: 18px;
+  }
+  &:hover{
+    background-color: $primary;
+    color: $white;
+  }
+}
+
+
+.page-header {
+  padding: 200px 0px;
+}
+
+
+@media (max-width:1024px) {
+  .space-ptb {
+    padding: 80px 0;
+  }
+
+  .space-pt {
+    padding: 80px 0 0;
+  }
+
+  .space-lg-pt {
+    padding: 90px 0 0;
+  }
+
+  .space-pb {
+    padding: 0 0 80px;
+  }
+
+}
+
+
+@media (max-width:991px) {
+  .space-ptb {
+    padding: 60px 0;
+  }
+
+  .space-pt {
+    padding: 60px 0 0;
+  }
+
+  .space-lg-pt {
+    padding: 70px 0 0;
+  }
+
+  .space-pb {
+    padding: 0 0 60px;
+  }
+}
+
+
+
+@media (max-width:767px) {
+  .space-ptb {
+    padding: 40px 0;
+  }
+
+  .space-pt {
+    padding: 40px 0 0;
+  }
+
+  .space-lg-pt {
+    padding: 60px 0 0;
+  }
+
+  .space-pb {
+    padding: 0 0 40px;
+  }
+
+    h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+}
+
+@media (max-width:575px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  .newsletter-btn{
+    font-size: 20px;
+    padding: 15px 30px;
+  }
+  
+  .newsletter-btn span{
+    font-size: 16px;
+  }
+
+}
