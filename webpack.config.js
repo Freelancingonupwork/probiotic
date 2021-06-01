@@ -4,17 +4,17 @@ const TerserPlugin = require('terser-webpack-plugin');
 const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-    entry: './src/js/app.js',
+    entry: './Resources/Private/Javascript/app.js',
     mode: 'production',
     output: {
-      path: `${__dirname}/dist`,
+      path: `${__dirname}/Resources/Public/`,
       filename: 'bundle.js',
     },
     plugins: [
       new MiniCssExtractPlugin(),
       new CopyPlugin({
         patterns: [
-          { from: "src/images/", to: "images" }
+          { from: "Resources/Private/Images/", to: "Images/" }
         ],
       }),
     ],
